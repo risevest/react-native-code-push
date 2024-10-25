@@ -190,3 +190,7 @@ Ankh.NoLoad
 
 # RN New Version App Generation
 Examples/testapp_rn
+
+# Android debug build files (conflict ignoring #Visual Studio files)
+!android/app/src/debug/
+ios/Pods
