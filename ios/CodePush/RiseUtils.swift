@@ -7,14 +7,27 @@
 //
 
 import Foundation
-import Zip
+import ZIPFoundation
 
 @objc
 public class RiseUtils : NSObject {
     
     @objc(unzipAtPath: destination:error:)
     public class func unzipAtPath(_ folder: String, destination: String) throws {
+        let fileManager = FileManager()
+        
+        var sourceURL = URL(fileURLWithPath: folder)
+        
+        var destinationURL = URL(fileURLWithPath: destination)
+        do {
+            try fileManager.createDirectory(at: destinationURL, withIntermediateDirectories: true, attributes: nil)
+           try fileManager.unzipItem(at: sourceURL, to: destinationURL)
+        } catch {
+            
+            print("[RiseUtils] Extraction of ZIP archive failed with error:\(error)")
+        }
+        
    
-        return try Zip.unzipFile(URL(string: folder)!, destination: URL(string: destination)!, overwrite: false, password: nil)
+        
     }
 }
