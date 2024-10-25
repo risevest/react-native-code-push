@@ -1,0 +1,29 @@
+PODS:
+  - Base64 (1.1.2)
+  - JWT (3.0.0-beta.14):
+    - Base64 (~> 1.1.2)
+  - React-Core (0.1.0)
+  - ZIPFoundation (0.9.19)
+
+DEPENDENCIES:
+  - Base64 (~> 1.1)
+  - JWT (~> 3.0.0-beta.12)
+  - React-Core
+  - ZIPFoundation (~> 0.9)
+
+SPEC REPOS:
+  trunk:
+    - Base64
+    - JWT
+    - React-Core
+    - ZIPFoundation
+
+SPEC CHECKSUMS:
+  Base64: cecfb41a004124895a7bcee567a89bae5a89d49b
+  JWT: ef71dfb03e1f842081e64dc42eef0e164f35d251
+  React-Core: c89e140a0ac23ed77a6094fe25d005e9c72e03b0
+  ZIPFoundation: b8c29ea7ae353b309bc810586181fd073cb3312c
+
+PODFILE CHECKSUM: e191bb10453d09462676b5c0678e9b445164be07
+
+COCOAPODS: 1.14.3

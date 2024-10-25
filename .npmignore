@@ -100,4 +100,6 @@ packages/
 .git/
 
 .watchmanconfig
-
+ios/Pods
+ios/Podfile
+ios.Podfile.lock
